@@ -21,6 +21,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+#      run: dotnet test --no-build --verbosity normal -e CoverletOutput="./TestResults/" -e CoverletOutputFormat="json,cobertura,opencover" -e MergeWith="./TestResults/coverage.json"
+#      run: dotnet test --no-build --verbosity normal -e /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info
+      run: dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage;Format=json,lcov,cobertura"
+
     - name: Coveralls
       uses: coverallsapp/github-action@v2

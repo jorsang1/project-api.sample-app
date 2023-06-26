@@ -294,3 +294,4 @@ backend-*.tfvars
 Client.HelpNew/
 
 **/appsettings.Development.json
+/coverage-results/
