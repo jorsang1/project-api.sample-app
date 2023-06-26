@@ -1,4 +1,5 @@
 # Project API Sample APP
+[![Build&Test](https://github.com/jorsang1/project-api.sample-app/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/jorsang1/project-api.sample-app/actions/workflows/build-and-test.yml)
 
 This is a Sample APP for the LanguageWire Project API.
 
